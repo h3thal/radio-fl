@@ -46,10 +46,10 @@ $('.ch').live('click', function() {
 	$(this).addClass('current');
 	//$('.item5').fadeToggle()
 });
-$('.item5').live('click', function() {
+$('.item6').live('click', function() {
 	$(this).fadeOut(); //меняем иконку громкости, сюда же можно пихнуть и выкл-вкл звука;
 	document.getElementById('audio').pause();
 });
 $('.music').live('click', function() {
-	$('.item5').fadeIn()
+	$('.item6').fadeIn()
 });
