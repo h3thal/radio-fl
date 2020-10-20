@@ -10,27 +10,28 @@ $('.item').on('click', function() { //обработка клика по люб�
 	var fm = $(this).attr('id'); //берём переменную id выбранного канала;
 	////////////////////////
 	var chid = $(this).attr('id');
-	if (chid == 'ch1') {
-        document.getElementById('audio').src = 'https://listen.myrh.ru/id038118';
-		document.getElementById('audio').play();
+	if ($(this).hasClass('music')) {
+		if (chid == 'ch1') {
+			document.getElementById('audio').src = 'https://listen.myrh.ru/id038118';
+			document.getElementById('audio').play();
+		}
+		if (chid == 'ch2') {
+			document.getElementById('audio').src = 'https://listen.myrh.ru/id038164';
+			document.getElementById('audio').play();
+		}
+		if (chid == 'ch3') {
+			document.getElementById('audio').src = 'https://listen.myrh.ru/id038163';
+			document.getElementById('audio').play();
+		}
+		if (chid == 'ch4') {
+			document.getElementById('audio').src = 'https://listen.myrh.ru/id038165';
+			document.getElementById('audio').play();
+		}
+		if (chid == 'ch5') {
+			document.getElementById('audio').src = 'https://listen.myrh.ru/id038166';
+			document.getElementById('audio').play();
+		}
 	}
-	if (chid == 'ch2') {
-        document.getElementById('audio').src = 'https://listen.myrh.ru/id038164';
-		document.getElementById('audio').play();
-	}
-	if (chid == 'ch3') {
-        document.getElementById('audio').src = 'https://listen.myrh.ru/id038163';
-		document.getElementById('audio').play();
-	}
-	if (chid == 'ch4') {
-        document.getElementById('audio').src = 'https://listen.myrh.ru/id038165';
-		document.getElementById('audio').play();
-	}
-    if (chid == 'ch5') {
-        document.getElementById('audio').src = 'https://listen.myrh.ru/id038166';
-        document.getElementById('audio').play();
-    }
-    
 	//////////////////////
 	$(this).attr('id', 'stream') //меняем id выбранного канала;
 	$('.home').attr('id', fm); //главной кнопке присваиваем id выбранного канала;
